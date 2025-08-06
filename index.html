@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .our-gallery {
+            width: 90%;
+            min-height: 80dvh;
+            background-color: thistle;
+            margin: 0 auto;
+           
+        }
+        .gallery-grid-container {
+        
+            display: grid;
+            grid-template-columns: repeat(6, 150px);
+            grid-template-rows: repeat(6, 140px);
+            place-content: center;
+            gap: 1rem;
+            grid-template-areas: 
+            "gallery1 gallery1 gallery2 gallery2 gallery3 gallery3"
+            "gallery1 gallery1 gallery2 gallery2 gallery3 gallery3"
+            "gallery4 gallery4 gallery4 gallery4 gallery5 gallery5"
+            "gallery4 gallery4 gallery4 gallery4 gallery5 gallery5"
+            "gallery6 gallery6 gallery7 gallery7 gallery7 gallery7"
+            "gallery6 gallery6 gallery7 gallery7 gallery7 gallery7"
+        }
+        .gallery-box {
+            background-color: salmon;
+        }
+
+        @media(max-width: 720px) {
+              .our-gallery {
+                width: 96%;
+            min-height: 80dvh;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+        }
+        
+         .gallery-grid-container {
+            
+        
+            display: grid;
+            grid-template-columns: repeat(6, 60px);
+            grid-template-rows: repeat(6, 40px);
+            place-content: center;
+            gap: 1rem;
+            grid-template-areas: 
+            "gallery1 gallery1 gallery2 gallery2 gallery3 gallery3"
+            "gallery1 gallery1 gallery2 gallery2 gallery3 gallery3"
+            "gallery4 gallery4 gallery4 gallery4 gallery5 gallery5"
+            "gallery4 gallery4 gallery4 gallery4 gallery5 gallery5"
+            "gallery6 gallery6 gallery7 gallery7 gallery7 gallery7"
+            "gallery6 gallery6 gallery7 gallery7 gallery7 gallery7"
+        }
+        }
+        @media(max-width: 1110px) {
+              .our-gallery {
+                width: 96%;
+            min-height: 80dvh;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+        }
+        
+         .gallery-grid-container {
+            
+        
+            display: grid;
+            grid-template-columns: repeat(6, 110px);
+            grid-template-rows: repeat(6, 90px);
+            place-content: center;
+            gap: 1rem;
+            grid-template-areas: 
+           "gallery1 gallery1 gallery2 gallery2 gallery3 gallery3"
+            "gallery1 gallery1 gallery2 gallery2 gallery3 gallery3"
+            "gallery4 gallery4 gallery4 gallery4 gallery5 gallery5"
+            "gallery4 gallery4 gallery4 gallery4 gallery5 gallery5"
+            "gallery6 gallery6 gallery7 gallery7 gallery7 gallery7"
+            "gallery6 gallery6 gallery7 gallery7 gallery7 gallery7"
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="our-gallery">
+        <div class="gallery-grid-container">
+            <div class="gallery-box" style="grid-area: gallery1";></div>
+            <div class="gallery-box" style="grid-area: gallery2";></div>
+            <div class="gallery-box" style="grid-area: gallery3";></div>
+            <div class="gallery-box" style="grid-area: gallery4";></div>
+            <div class="gallery-box" style="grid-area: gallery5";></div>
+            <div class="gallery-box" style="grid-area: gallery6";></div>
+            <div class="gallery-box" style="grid-area: gallery7";></div>
+        </div>
+    </div>
+</body>
+</html>
